@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>求人サイト（企業・ビジネスサイト）向け 無料ホームページテンプレート tp_biz57_job</title>
+<title>がばベン　F_うどん_求人サイト</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ここにサイト説明を入れます">
 <link rel="stylesheet" href="css/style.css">
@@ -25,13 +26,13 @@
 <li><a href="index.html">ホーム<span>Home</span></a></li>
 <li><a href="list_base.html">求人一覧<span>Jobs List</span></a>
 	<ul>
-	<li><a href="list.html">飲食店の求人</a></li>
-	<li><a href="list.html">営業の求人</a></li>
-	<li><a href="list.html">接客・販売の求人</a></li>
-	<li><a href="list.html">事務の求人</a></li>
+	<li><a href="list.html">伝統工芸</a></li>
+	<li><a href="list.html">農業</a></li>
+	<li><a href="list.html">漁業</a></li>
+	<li><a href="list.html"></a></li>
 	</ul>
 </li>
-<li><a href="info.html">掲載のご案内<span>Information</span></a></li>
+<li><a href="info.html">事業者インタビュー<span>Information</span></a></li>
 <li><a href="faq.html">よく頂く質問<span>Faq</span></a></li>
 <li><a href="contact.html">お問い合わせ<span>Contact</span></a></li>
 </ul>
@@ -60,10 +61,10 @@
 
 <section>
 
-<h2>お問い合わせフォーム</h2>
+<h2>求人応募フォーム</h2>
 
 <!-- フォームの情報はここからです -->
-<form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
+<form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>
 <input type="hidden" name="mode" value="form">
 <table class="ta1">
 <!-- 入力／確認 -->
@@ -71,30 +72,50 @@
 <tr>
 <th width="150">お名前<span style="color:red">※</span></th>
 <td>
-<input name="item1" value="<?php echo $form["item1"];?>" type="text" size="40" maxlength="500" class="ws">
-<?php if ($msg["item1"]) echo '<div style="color:red">' . $msg["item1"] . '</div>'; ?>
+<input name="item1" value=" " style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+<?php if ($msg["item1"]) echo '<div style="color:red"></div>
 </td>
 </tr>
 <tr>
-<th width="150">メールアドレス<span style="color:red">※</span></th>
+	<th width="150">フリガナ<span style="color:red">※</span></th>
+	<td>
+	<input name="item1" value=" " style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+	<?php if ($msg["item1"]) echo '<div style="color:red"></div>
+	</td>
+	</tr>
+<tr>
+<th width="150">年齢<span style="color:red">※</span></th>
 <td>
-<input name="item2" value="<?php echo $form["item2"];?>" type="text" size="40" maxlength="500" class="ws">
-<?php if ($msg["item2"]) echo '<div style="color:red">' . $msg["item2"] . '</div>'; ?>
+<input name="item2" value=" " style="color:rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+<?php if ($msg["item2"]) echo '<div style="color:red"></div>
 </td>
 </tr>
 <tr>
-<th>お問い合わせ内容<span style="color:red">※</span></th>
+	<th width="150">職業<span style="color:red">※</span></th>
+	<td>
+	<input name="item1" value="" style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+	<?php if ($msg["item1"]) echo '<div style="color:red"></div>
+	</td>
+	</tr>
+<tr>
+	<th width="150">メールアドレス<span style="color:red">※</span></th>
+	<td>
+	<input name="item1" value="" style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+	<?php if ($msg["item1"]) echo '<div style="color:red"></div>
+	</td>
+</tr>
+<tr>
+<th>その他備考内容<span style="color:red">※</span></th>
 <td>
-<textarea name="item3" cols="40" rows="10" class="wl"><?php echo $form["item3"]; ?></textarea>
-<?php if ($msg["item3"]) echo '<div style="color:red">' . $msg["item3"] . '</div>'; ?>
+<textarea name="item3" cols="40" rows="10" class="wl"></textarea>
+<?php if ($msg["item3"]) echo '<div style="color:red"></div>
 </td>
 </tr>
 </table>
 
 <p class="btn">
-<input type="submit" value="内容を確認する">
 &nbsp;
-<input type="reset" value="リセット">
+<input type="reset" value="送信">
 </p>
 
 </form>
@@ -106,311 +127,20 @@
 
 <div id="sub">
 
-<nav class="box1">
-<h2>メニュータイトル(subブロック)</h2>
-<ul class="submenu">
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-</ul>
-</nav>
-
-<nav>
-<h2>メニュータイトル(subブロック)</h2>
-<ul class="submenu">
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-</ul>
-</nav>
-
-<h2>今月の注目(subブロック)</h2>
-
-<div class="list">
-	<div>
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<h4>WEBデザイナー募集！未経験歓迎！</h4>
-		<dl class="line">
-		<dt>求人ナンバー</dt>
-		<dd>No.XXX</dd>
-		<dt>企業名</dt>
-		<dd>サンプルカンパニー</dd>
-		<dt>給与・時給</dt>
-		<dd>時給1,100円〜　研修期間：時給800円</dd>
-		<dt>勤務地</dt>
-		<dd>千葉市中央区</dd>
-		<dt>勤務時間</dt>
-		<dd>19:00〜　1日3時間程度</dd>
-		</dl>
-	</div>
-	<p class="btn"><a href="item.html">詳細を見る</a></p>
-</div>
-
-<div class="list">
-	<div>
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<h4>WEBデザイナー募集！未経験歓迎！</h4>
-		<dl class="line">
-		<dt>求人ナンバー</dt>
-		<dd>No.XXX</dd>
-		<dt>企業名</dt>
-		<dd>サンプルカンパニー</dd>
-		<dt>給与・時給</dt>
-		<dd>時給1,100円〜　研修期間：時給800円</dd>
-		<dt>勤務地</dt>
-		<dd>千葉市中央区</dd>
-		<dt>勤務時間</dt>
-		<dd>19:00〜　1日3時間程度</dd>
-		</dl>
-	</div>
-	<p class="btn"><a href="item.html">詳細を見る</a></p>
-</div>
-
-<div class="list">
-	<div>
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<h4>WEBデザイナー募集！未経験歓迎！</h4>
-		<dl class="line">
-		<dt>求人ナンバー</dt>
-		<dd>No.XXX</dd>
-		<dt>企業名</dt>
-		<dd>サンプルカンパニー</dd>
-		<dt>給与・時給</dt>
-		<dd>時給1,100円〜　研修期間：時給800円</dd>
-		<dt>勤務地</dt>
-		<dd>千葉市中央区</dd>
-		<dt>勤務時間</dt>
-		<dd>19:00〜　1日3時間程度</dd>
-		</dl>
-	</div>
-	<p class="btn"><a href="item.html">詳細を見る</a></p>
-</div>
-
-<h2>今月の注目(subブロック)</h2>
-
-<div class="list2">
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！未経験歓迎！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！未経験歓迎！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！未経験歓迎！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！未経験歓迎！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！未経験歓迎！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！</a></h4>
-	</div>
-</div>
 
 </div>
 <!--/#sub-->
 
 <div id="side">
 
-<nav class="box1">
-<h2>メニュータイトル(sideブロック)</h2>
-<ul class="submenu">
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-</ul>
-</nav>
-
-<nav>
-<h2>メニュータイトル(sideブロック)</h2>
-<ul class="submenu">
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-<li><a href="#">メニューサンプル</a></li>
-</ul>
-</nav>
-
-<h2>今月の注目(sideブロック)</h2>
-
-<div class="list2">
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！未経験歓迎！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！未経験歓迎！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！未経験歓迎！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！未経験歓迎！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！未経験歓迎！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！</a></h4>
-	</div>
-</div>
-
-<div class="list2">
-	<div>
-	<h4><a href="item.html">WEBデザイナー募集！</a></h4>
-	</div>
-</div>
-
-<h2>今月の注目(sideブロック)</h2>
 
 <div class="list">
-	<div>
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<h4>WEBデザイナー募集！未経験歓迎！</h4>
-		<dl class="line">
-		<dt>求人ナンバー</dt>
-		<dd>No.XXX</dd>
-		<dt>企業名</dt>
-		<dd>サンプルカンパニー</dd>
-		<dt>給与・時給</dt>
-		<dd>時給1,100円〜　研修期間：時給800円</dd>
-		<dt>勤務地</dt>
-		<dd>千葉市中央区</dd>
-		<dt>勤務時間</dt>
-		<dd>19:00〜　1日3時間程度</dd>
-		</dl>
-	</div>
-	<p class="btn"><a href="item.html">詳細を見る</a></p>
 </div>
 
 <div class="list">
-	<div>
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<h4>WEBデザイナー募集！未経験歓迎！</h4>
-		<dl class="line">
-		<dt>求人ナンバー</dt>
-		<dd>No.XXX</dd>
-		<dt>企業名</dt>
-		<dd>サンプルカンパニー</dd>
-		<dt>給与・時給</dt>
-		<dd>時給1,100円〜　研修期間：時給800円</dd>
-		<dt>勤務地</dt>
-		<dd>千葉市中央区</dd>
-		<dt>勤務時間</dt>
-		<dd>19:00〜　1日3時間程度</dd>
-		</dl>
-	</div>
-	<p class="btn"><a href="item.html">詳細を見る</a></p>
 </div>
 
 <div class="list">
-	<div>
-	<figure><a href="item.html"><img src="images/sample1.jpg" alt=""></a></figure>
-	<h4>WEBデザイナー募集！未経験歓迎！</h4>
-		<dl class="line">
-		<dt>求人ナンバー</dt>
-		<dd>No.XXX</dd>
-		<dt>企業名</dt>
-		<dd>サンプルカンパニー</dd>
-		<dt>給与・時給</dt>
-		<dd>時給1,100円〜　研修期間：時給800円</dd>
-		<dt>勤務地</dt>
-		<dd>千葉市中央区</dd>
-		<dt>勤務時間</dt>
-		<dd>19:00〜　1日3時間程度</dd>
-		</dl>
-	</div>
-	<p class="btn"><a href="item.html">詳細を見る</a></p>
 </div>
 </div>
 <!--/#side-->
