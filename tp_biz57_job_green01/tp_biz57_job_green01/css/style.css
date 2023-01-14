@@ -236,7 +236,7 @@ main {
 main h2 {
 	background: linear-gradient(#b6dc9c, #99cb76 49%, #8cc167 50%);		/*グラデーション*/
 	color: #fff;
-	font-size: 1.2rem;		/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
+	font-size: 20px;		/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
 	font-weight: normal;	/*文字の太さを標準に*/
 	padding: 5px 20px;		/*h2タグ内の余白。上下、左右の順。*/
 	margin: 0 0 20px;		/*h2タグの外側にとるスペース。上、左右、下の順。*/
@@ -292,7 +292,7 @@ main p {
 /*subとside内のh2タグ*/
 #sub h2, #side h2 {
 	margin: 0;
-	font-size: 1.2em;		/*文字サイズを少しだけ大きめに*/
+	font-size: 20px;		/*文字サイズを少しだけ大きめに*/
 	font-weight: normal;	/*文字の太さを標準に*/
 	margin-bottom: 10px;	/*下に空けるスペース*/
 }
@@ -1248,4 +1248,106 @@ ul.menu a {
 
 /*　※注意！　下の閉じカッコ　}　はこのブロックに必要なので、削除しないで下さい。　*/
 
+}
+
+
+/* 紹介動画のところ*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  margin-left: auto;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-left: auto;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+
+/*詳しくみるボタン*/
+a.btn-flat {
+  overflow: hidden;
+
+  padding: 1.5rem 6rem;
+
+  color: #fff;
+  border-radius: 0;
+  background: #000;
+  margin-left: auto;
+  text-align: center; 
+}
+
+a.btn-flat span {
+  position: relative;
+  margin-left: auto;
+}
+
+a.btn-flat:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100px;
+  height: 100px;
+
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-80%) translateY(-25px);
+  transform: translateX(-80%) translateY(-25px);
+
+  border-radius: 50%;
+  background:#A3CE85;
+}
+
+a.btn-flat:hover:before {
+  width: 400px;
+  height: 400px;
+
+  -webkit-transform: translateX(-1%) translateY(-175px);
+
+  transform: translateX(-1%) translateY(-175px);
+}
+
+a.btn btn-flat{
+	text-align: right;
+	display: block;
+}
+
+.faq{
+	width: 1000px;
+}
+
+.box{
+	padding: 2%;
+	margin: 5%;
 }
