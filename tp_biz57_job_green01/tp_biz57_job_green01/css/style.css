@@ -236,7 +236,7 @@ main {
 main h2 {
 	background: linear-gradient(#b6dc9c, #99cb76 49%, #8cc167 50%);		/*グラデーション*/
 	color: #fff;
-	font-size: 1.2rem;		/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
+	font-size: 20px;		/*文字サイズ。remの単位についてはテンプレート内の解説をお読み下さい。*/
 	font-weight: normal;	/*文字の太さを標準に*/
 	padding: 5px 20px;		/*h2タグ内の余白。上下、左右の順。*/
 	margin: 0 0 20px;		/*h2タグの外側にとるスペース。上、左右、下の順。*/
@@ -292,7 +292,7 @@ main p {
 /*subとside内のh2タグ*/
 #sub h2, #side h2 {
 	margin: 0;
-	font-size: 1.2em;		/*文字サイズを少しだけ大きめに*/
+	font-size: 20px;		/*文字サイズを少しだけ大きめに*/
 	font-weight: normal;	/*文字の太さを標準に*/
 	margin-bottom: 10px;	/*下に空けるスペース*/
 }
@@ -1249,3 +1249,259 @@ ul.menu a {
 /*　※注意！　下の閉じカッコ　}　はこのブロックに必要なので、削除しないで下さい。　*/
 
 }
+
+
+/* 紹介動画のところ*/
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 62.5%;
+  }
+  
+  .btn,
+  a.btn,
+  button.btn {
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.5;
+	margin-left: auto;
+	position: relative;
+	display: inline-block;
+	padding: 1rem 4rem;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	letter-spacing: 0.1em;
+	color: #212529;
+	border-radius: 0.5rem;
+  }
+  
+  
+
+/*詳しくみるボタン*/
+
+a.btn-flat {
+	overflow: hidden;
+	padding: 1.5rem 6rem;
+	color: #fff;
+	border-radius: 0;
+	background: #000;
+  }
+  
+  a.btn-flat span {
+	position: relative;
+  }
+  
+  a.btn-flat:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	content: '';
+	-webkit-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+	-webkit-transform: translateX(-96%);
+	transform: translateX(-96%);
+	background: #8FBF6D;
+  }
+  
+  a.btn-flat:hover:before {
+	-webkit-transform: translateX(0%);
+	transform: translateX(0%);
+  }
+
+
+
+.box{
+	padding: 2%;
+	margin: 1% 10% ;
+}
+
+.button01{
+	display: flex;
+	justify-content: center;
+}
+.span{
+	position: relative;
+}
+
+.btn btn-flat{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.matomari{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: right;
+	margin-left: auto;
+}
+
+/*動画挿入*/
+.responsive {
+	width: 480px;
+	height: 270px;
+	aspect-ratio: 16/9;
+	}
+
+/*それぞれの分野の紹介ページ*/
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #8FBF6D;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #000000;
+}
+
+/*それぞれ分野の紹介ページの上部写真*/
+header.masthead {
+	position: relative;
+	margin-bottom: 3rem;
+	padding-top: calc(8rem + 57px);
+	padding-bottom: 8rem;
+	background: no-repeat center center;
+	background-color: #6c757d;
+	background-size: cover;
+	background-attachment: scroll;
+	color:#f0f0f0
+  }
+  header.masthead:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #212529;
+	opacity: 0.5;
+  }
+  header.masthead .page-heading,
+  header.masthead .post-heading,
+  header.masthead .site-heading {
+	color: #fff;
+  }
+  header.masthead .page-heading,
+  header.masthead .site-heading {
+	text-align: center;
+  }
+  header.masthead .page-heading h1, header.masthead .page-heading .h1,
+  header.masthead .site-heading h1,
+  header.masthead .site-heading .h1 {
+	font-size: 3rem;
+  }
+  header.masthead .page-heading .subheading,
+  header.masthead .site-heading .subheading {
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.1;
+	display: block;
+	margin-top: 0.625rem;
+	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  header.masthead .post-heading h1, header.masthead .post-heading .h1 {
+	font-size: 2.25rem;
+  }
+  header.masthead .post-heading .meta,
+  header.masthead .post-heading .subheading {
+	line-height: 1.1;
+	display: block;
+  }
+  header.masthead .post-heading .subheading {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 0.75rem 0 2rem;
+	font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  header.masthead .post-heading .meta {
+	font-size: 1.25rem;
+	font-weight: 300;
+	font-style: italic;
+	font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  header.masthead .post-heading .meta a {
+	color: #fff;
+  }
+  @media (min-width: 992px) {
+	header.masthead {
+	  padding-top: 12.5rem;
+	  padding-bottom: 12.5rem;
+	}
+	header.masthead .page-heading h1, header.masthead .page-heading .h1,
+  header.masthead .site-heading h1,
+  header.masthead .site-heading .h1 {
+	  font-size: 5rem;
+	}
+	header.masthead .post-heading h1, header.masthead .post-heading .h1 {
+	  font-size: 3.5rem;
+	}
+	header.masthead .post-heading .subheading {
+	  font-size: 1.875rem;
+	}
+}
+
+.justfy-content-center{
+	justify-content: center;
+}
+.section-heading {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-top: 3.75rem;
+	color: #8FBF6D
+}
+
+.migiyori{
+	text-align: right;
+}
+
+.wrap{
+	margin-bottom: 1.5rem;
+  }
+  .youtube {
+	position: relative;
+	height: 0;
+	margin-bottom: 20px;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+  }
+  .youtube iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+  }
+  .wrap img{
+	width: 100%;
+  }
+   
+  /* ココから下がPC表示（600px以上）のレイアウト */
+  @media screen and (min-width: 600px) {
+	.float-right{
+	  float: right;
+	  width: 49.5%;
+	}
+	.float-left{
+	  float:left;
+	  width: 49.5%;
+	}
+	.wrap:after{
+	  display: block;
+	  clear: both;
+	  content: "";
+	}
+  }
+  

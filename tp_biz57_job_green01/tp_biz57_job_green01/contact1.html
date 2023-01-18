@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>がばべん　F_うどん_求人サイト</title>
+<title>求人サイト（企業・ビジネスサイト）向け 無料ホームページテンプレート tp_biz57_job</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ここにサイト説明を入れます">
 <link rel="stylesheet" href="css/style.css">
@@ -28,17 +28,17 @@
 	<li><a href="list.html">伝統工芸</a></li>
 	<li><a href="list.html">農業</a></li>
 	<li><a href="list.html">漁業</a></li>
-	<li><a href="list.html">その他</a></li>
+	<li><a href="list.html">林業</a></li>
 	</ul>
 </li>
 <li><a href="info.html">事業者インタビュー<span>Interview</span></a></li>
 <li><a href="faq.html">紹介動画<span>Video</span></a></li>
-<li><a href="contact1.html">求人応募フォーム<span>Job application form</span></a></li>
+<li><a href="contact.html">求人応募フォーム<span>Job application form</span></a></li>
 </ul>
 </nav>
 
 <div class="sh">
-<!--
+
 <p>※小さな端末のメニュー開閉時に追加したいブロックがあればここ（shボックスの中）に入れて下さい。</p>
 <ul class="submenu">
 <li><a href="#">小さな端末用メニュー</a></li>
@@ -47,7 +47,7 @@
 <li><a href="#">小さな端末用メニュー</a></li>
 <li><a href="#">小さな端末用メニュー</a></li>
 </ul>
--->
+
 </div>
 <!--/.sh-->
 
@@ -58,80 +58,75 @@
 
 <main>
 
-<article>
+<section>
 
-<h2>【Iターン移住者歓迎！】自然豊かな場所で野菜の成長と共に暮していく</h2>
+<h2>求人応募フォーム</h2>
 
-<p>
-	<span class="icon waku">後継者募集</span>
-	<span class="icon newicon">NEW</span>
-	<span class="icon option2">農業</span>
-	<span class="icon upicon">夫婦で後継</span>
-</p>
-
-<p><img src="images/sample4.jpg" alt=""></p>
-
-<table class="ta1">
-<caption>求人内容</caption>
-<tr>
-<th>企業名</th>
-<td>○○農家</td>
-</tr>
-<tr>
-<th>給与｜時給</th>
-<td>時給1,500円〜2,000円<br>
-交通費別途支給</td>
-</tr>
-<tr>
-<th>勤務地</th>
-<td>○○県○○市○○</td>
-</tr>
-<tr>
-<th>勤務時間</th>
-<td>午前9:00 ~ 午後18:00</td>
-</tr>
-</table>
-
-<table class="ta1">
-<caption>企業情報</caption>
-<tr>
-<th>企業名</th>
-<td>○○農家</td>
-</tr>
-<tr>
-<th>事業内容</th>
-<td>野菜の栽培</td>
-</tr>
-<tr>
-<th>従業員数</th>
-<td>○○人</td>
-</tr>
-<tr>
-<th>設立</th>
-<td>○○○年</td>
-</tr>
-
-<tr>
-<th>会社url</th>
-<td>○○○.html</td>
-</tr>
-</table>
-
-<p class="btn arrow"><a href="#">こちらの求人に応募する</a></p>
-
-<p class="c"><a href="javascript:history.back()">&lt;&lt; 前のページに戻る</a></p>
-
-</article>
+	<!-- フォームの情報はここからです -->
+	<form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>
+	<input type="hidden" name="mode" value="form">
+	<table class="ta1">
+	<!-- 入力／確認 -->
+	<!--<tr><th class="tamidashi" colspan="2">お問い合わせフォーム</th></tr>-->
+	<tr>
+	<th width="150">お名前<span style="color:red">※</span></th>
+	<td>
+	<input name="item1" value=" " style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+	<?php if ($msg["item1"]) echo '<div style="color:red"></div>
+	</td>
+	</tr>
+	<tr>
+		<th width="150">フリガナ<span style="color:red">※</span></th>
+		<td>
+		<input name="item1" value=" " style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+		<?php if ($msg["item1"]) echo '<div style="color:red"></div>
+		</td>
+		</tr>
+	<tr>
+	<th width="150">年齢<span style="color:red">※</span></th>
+	<td>
+	<input name="item2" value=" " style="color:rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+	<?php if ($msg["item2"]) echo '<div style="color:red"></div>
+	</td>
+	</tr>
+	<tr>
+		<th width="150">職業<span style="color:red">※</span></th>
+		<td>
+		<input name="item1" value="" style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+		<?php if ($msg["item1"]) echo '<div style="color:red"></div>
+		</td>
+		</tr>
+	<tr>
+		<th width="150">メールアドレス<span style="color:red">※</span></th>
+		<td>
+		<input name="item1" value="" style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+		<?php if ($msg["item1"]) echo '<div style="color:red"></div>
+		</td>
+	</tr>
+	<tr>
+	<th>その他備考内容<span style="color:red">※</span></th>
+	<td>
+	<textarea name="item3" cols="40" rows="10" class="wl"></textarea>
+	<?php if ($msg["item3"]) echo '<div style="color:red"></div>
+	</td>
+	</tr>
+	</table>
+	
+	<p class="btn">
+	&nbsp;
+	<input type="reset" value="送信">
+	</p>
+	
+	</form>
+</section>
 
 </main>
 
 <div id="sub">
-
 </div>
 <!--/#sub-->
 
 <div id="side">
-
 </div>
 <!--/#side-->
 
@@ -149,16 +144,16 @@
 <li><a href="#">伝統工芸</a></li>
 <li><a href="#">農業</a></li>
 <li><a href="#">漁業</a></li>
-<li><a href="#">その他</a></li>
+<li><a href="#">林業</a></li>
 </ul>
 <ul>
-<li class="title">事業者インタビュー</li>
+<li><a href="info.html" class="title">事業者インタビュー</a></li>
 </ul>
 <ul>
 <li class="title">紹介動画</li>
 </ul>
 <ul>
-<li class="title">求人応募フォーム</li>
+<li><a href="contact1.html" class="title">求人応募フォーム</a></li>
 </ul>
 </div>
 <!--/#footermenu-->
@@ -182,15 +177,15 @@
 <li><a href="index.html">ホーム</a></li>
 <li><a href="">求人一覧</a>
 	<ul>
-	<li><a href="list.html">飲食店の求人</a></li>
-	<li><a href="list.html">営業の求人</a></li>
-	<li><a href="list.html">接客・販売の求人</a></li>
-	<li><a href="list.html">事務の求人</a></li>
+	<li><a href="list.html">伝統工芸</a></li>
+	<li><a href="list.html">農業</a></li>
+	<li><a href="list.html">漁業</a></li>
+	<li><a href="list.html">林業</a></li>
 	</ul>
 </li>
-<li><a href="info.html">掲載のご案内</a></li>
-<li><a href="faq.html">よく頂く質問</a></li>
-<li><a href="contact.html">お問い合わせ</a></li>
+<li><a href="info.html">事業者インタビュー</a></li>
+<li><a href="faq.html">紹介動画</a></li>
+<li><a href="contact.html">求人応募フォーム</a></li>
 </ul>
 </nav>
 
