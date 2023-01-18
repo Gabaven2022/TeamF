@@ -3,7 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>求人サイト（企業・ビジネスサイト）向け 無料ホームページテンプレート tp_biz57_job</title>
-<title>がばベン　F_うどん_求人サイト</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ここにサイト説明を入れます">
 <link rel="stylesheet" href="css/style.css">
@@ -34,7 +33,7 @@
 </li>
 <li><a href="info.html">事業者インタビュー<span>Interview</span></a></li>
 <li><a href="faq.html">紹介動画<span>Video</span></a></li>
-<li><a href="contact1.html">求人応募フォーム<span>Job application form</span></a></li>
+<li><a href="contact.html">求人応募フォーム<span>Job application form</span></a></li>
 </ul>
 </nav>
 
@@ -61,35 +60,64 @@
 
 <section>
 
-<h2>事業者インタビュー</h2>
-<p>求人掲載をしている事業者の方に現場での様子やお仕事の魅力について聞きました。</p>
+<h2>求人応募フォーム</h2>
 
-<table class="ta1">
-<tr>
-<th>福岡県　有馬農家</th>
-<td>美味しいいちごにするためうちの農園では・・・</td>
-</tr>
-<tr>
-<th>福岡県　博多織　　　カトウ織物</th>
-<td>福岡県の伝統工芸品である博多織を代々作っている・・・</td>
-</tr>
-<tr>
-<th>佐賀県　鍋島段通　　なべしまや</th>
-<td>佐賀県を治めていた鍋島家に献上する品を作っていた・・・</td>
-</tr>
-<tr>
-<th>熊本県　屋根飾瓦細工　栗田工房</th>
-<td>こちらの工房では質の良い飾瓦を・・・</td>
-</tr>
-<tr>
-<th>長崎県　びわ農家　田中農園</th>
-<td>長崎県が生産量一位を誇るびわ。この農園では大きく美味しいびわを栽培するために・・・</td>
-</table>
-
-<p class="btn">
+	<!-- フォームの情報はここからです -->
+	<form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>
+	<input type="hidden" name="mode" value="form">
+	<table class="ta1">
+	<!-- 入力／確認 -->
+	<!--<tr><th class="tamidashi" colspan="2">お問い合わせフォーム</th></tr>-->
+	<tr>
+	<th width="150">お名前<span style="color:red">※</span></th>
+	<td>
+	<input name="item1" value=" " style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+	<?php if ($msg["item1"]) echo '<div style="color:red"></div>
+	</td>
+	</tr>
+	<tr>
+		<th width="150">フリガナ<span style="color:red">※</span></th>
+		<td>
+		<input name="item1" value=" " style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+		<?php if ($msg["item1"]) echo '<div style="color:red"></div>
+		</td>
+		</tr>
+	<tr>
+	<th width="150">年齢<span style="color:red">※</span></th>
+	<td>
+	<input name="item2" value=" " style="color:rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+	<?php if ($msg["item2"]) echo '<div style="color:red"></div>
+	</td>
+	</tr>
+	<tr>
+		<th width="150">職業<span style="color:red">※</span></th>
+		<td>
+		<input name="item1" value="" style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+		<?php if ($msg["item1"]) echo '<div style="color:red"></div>
+		</td>
+		</tr>
+	<tr>
+		<th width="150">メールアドレス<span style="color:red">※</span></th>
+		<td>
+		<input name="item1" value="" style="color: rgb(0, 0, 0);" type="text" size="40" maxlength="500" class="ws">
+		<?php if ($msg["item1"]) echo '<div style="color:red"></div>
+		</td>
+	</tr>
+	<tr>
+	<th>その他備考内容<span style="color:red">※</span></th>
+	<td>
+	<textarea name="item3" cols="40" rows="10" class="wl"></textarea>
+	<?php if ($msg["item3"]) echo '<div style="color:red"></div>
+	</td>
+	</tr>
+	</table>
+	
+	<p class="btn">
 	&nbsp;
-	<input type="reset" value="もっと見る">
+	<input type="reset" value="送信">
 	</p>
+	
+	</form>
 </section>
 
 </main>
@@ -113,10 +141,10 @@
 </ul>
 <ul>
 <li class="title">求人一覧</li>
-<li><a href="list.html">伝統工芸</a></li>
-<li><a href="list.html">農業</a></li>
-<li><a href="list.html">漁業</a></li>
-<li><a href="list.html">林業</a></li>
+<li><a href="#">伝統工芸</a></li>
+<li><a href="#">農業</a></li>
+<li><a href="#">漁業</a></li>
+<li><a href="#">林業</a></li>
 </ul>
 <ul>
 <li><a href="info.html" class="title">事業者インタビュー</a></li>
@@ -149,15 +177,15 @@
 <li><a href="index.html">ホーム</a></li>
 <li><a href="">求人一覧</a>
 	<ul>
-	<li><a href="list.html">飲食店の求人</a></li>
-	<li><a href="list.html">営業の求人</a></li>
-	<li><a href="list.html">接客・販売の求人</a></li>
-	<li><a href="list.html">事務の求人</a></li>
+	<li><a href="list.html">伝統工芸</a></li>
+	<li><a href="list.html">農業</a></li>
+	<li><a href="list.html">漁業</a></li>
+	<li><a href="list.html">林業</a></li>
 	</ul>
 </li>
-<li><a href="info.html">掲載のご案内</a></li>
-<li><a href="faq.html">よく頂く質問</a></li>
-<li><a href="contact.html">お問い合わせ</a></li>
+<li><a href="info.html">事業者インタビュー</a></li>
+<li><a href="faq.html">紹介動画</a></li>
+<li><a href="contact.html">求人応募フォーム</a></li>
 </ul>
 </nav>
 
